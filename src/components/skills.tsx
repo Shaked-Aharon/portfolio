@@ -9,7 +9,7 @@ export function Skills() {
                         className="flex flex-col items-center transition-transform hover:scale-105"
                     >
                         <img
-                            src="/assets/skill-icon.png"
+                            src="./assets/skill-icon.png"
                             alt={skill}
                             className="w-16 h-16 mb-4"
                         />
