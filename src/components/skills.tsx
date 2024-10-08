@@ -1,10 +1,10 @@
 const skills = [
-    {name: 'Languages', skills: ['JavaScript', 'TypeScript', 'C#', 'Python', 'Java', 'Dart']},
-    {name: 'Frameworks', skills: ['.Net Core', 'ASP.Net', 'Angular', 'React', 'NestJS', 'NextJS', 'ExpressJS', 'Django', 'Flask', 'Tkinter', 'Flutter']},
+    {name: 'Languages', skills: ['JavaScript', 'TypeScript', 'C#', 'Python', 'Java', 'PHP', 'Dart']},
+    {name: 'Frameworks', skills: ['.Net Core', 'ASP.Net', 'Angular', 'React', 'React Native', 'NestJS', 'NextJS', 'ExpressJS', 'Django', 'Flask', 'Tkinter', 'Flutter', 'WordPress']},
     {name: 'Databases', skills: ['MySQL', 'MariaDB', 'MongoDB', 'Redis']},
-    {name: 'DevOps', skills: ['Jenkins', 'CI/CD', 'AWS', 'Nginx', 'Virtualization']},
-    {name: 'Technologies', skills: ['Jest', 'ORM', 'Template Engine', 'Caching']},
-    {name: 'Tools', skills: ['Git', 'Github', 'BitBucket']},
+    {name: 'DevOps', skills: ['Jenkins', 'CI/CD', 'AWS', 'Nginx', 'IIS', 'Virtualization']},
+    {name: 'Technologies', skills: ['Jest', 'ORM', 'Template Engine', 'Microservices', 'Caching']},
+    {name: 'Tools', skills: ['Git', 'Github', 'BitBucket', 'Umbraco']},
     {name: 'OS', skills: ['Linux', 'Windows']},
 ]
 

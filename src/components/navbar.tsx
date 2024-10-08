@@ -1,5 +1,6 @@
 import { useState } from "react";
 import myResumeFile from '../assets/Resume - Shaked Aharon.pdf';
+import logo from '../assets/Shaked Aharon Logo.webp';
 
 export function Navbar() {
 
@@ -14,7 +15,14 @@ export function Navbar() {
         <nav className="bg-gray-800 fixed w-full z-10 shadow-lg">
             <div className="container mx-auto px-6 py-3 flex justify-between items-center">
                 <div className="text-2xl font-bold">
-                    <a href="#hero" className="text-white">Shaked Aharon</a>
+                    <a href="#hero" className="text-white">
+                        <img
+                            src={logo} // Replace with your own image
+                            alt="About Me"
+                            className="rounded-lg shadow-lg w-8"
+                        />
+                        {/* Shaked Aharon */}
+                    </a>
                 </div>
                 <div className="md:hidden">
                     <button
