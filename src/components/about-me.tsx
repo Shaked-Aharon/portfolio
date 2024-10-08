@@ -1,3 +1,4 @@
+import logo from '../assets/Shaked Aharon Logo.webp';
 export function AboutMe() {
     return (
         <section id="about" className="about-section py-20 px-6 md:px-20 bg-gray-900">
@@ -5,9 +6,9 @@ export function AboutMe() {
                 {/* About Image */}
                 <div className="md:w-1/3 mb-8 md:mb-0">
                     <img
-                        src="/assets/about-me-image.png" // Replace with your own image
+                        src={logo} // Replace with your own image
                         alt="About Me"
-                        className="rounded-lg shadow-lg"
+                        className="rounded-lg shadow-lg w-32 md:w-64"
                     />
                 </div>
 
