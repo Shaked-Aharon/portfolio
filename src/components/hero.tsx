@@ -1,10 +1,11 @@
+import heroImage from '../assets/hero-section.webp';
 export function Hero() {
     return (
         <div
             id="hero"
             className="hero-section h-screen bg-fixed bg-center bg-cover"
             style={{
-                backgroundImage: "url('./public/hero-section2.webp')",
+                backgroundImage: `url(${heroImage})`,
             }}
         >
             <div className="bg-black bg-opacity-50 p-10 flex flex-col justify-center items-center h-screen rounded-md text-center">
