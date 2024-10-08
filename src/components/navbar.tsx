@@ -1,0 +1,55 @@
+import { useState } from "react";
+
+export function Navbar() {
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
+
+    return (
+        <nav className="bg-gray-800 fixed w-full z-10 shadow-lg">
+            <div className="container mx-auto px-6 py-3 flex justify-between items-center">
+                <div className="text-2xl font-bold">
+                    <a href="#hero" className="text-white">Shaked Aharon</a>
+                </div>
+                <div className="md:hidden">
+                    <button
+                        onClick={toggleMenu}
+                        className="text-gray-300 focus:outline-none"
+                    >
+                        <svg
+                            className="w-6 h-6"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                d="M4 6h16M4 12h16M4 18h16"
+                            />
+                        </svg>
+                    </button>
+                </div>
+                <div className={`hidden md:flex items-center `}>
+                    <a href="#hero" className="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700">Home</a>
+                    <a href="#skills" className="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700">Skills</a>
+                    <a href="#projects" className="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700">Projects</a>
+                    <a href="#contact" className="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700">Contact</a>
+                </div>
+            </div>
+            <div className={`md:hidden md:flex items-center ${isOpen ? "block" : "hidden"}`}>
+                <a onClick={toggleMenu} href="#hero" className="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700">Home</a>
+                <a onClick={toggleMenu} href="#skills" className="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700">Skills</a>
+                <a onClick={toggleMenu} href="#projects" className="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700">Projects</a>
+                <a onClick={toggleMenu} href="#contact" className="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700">Contact</a>
+            </div>
+        </nav>
+
+    )
+}
