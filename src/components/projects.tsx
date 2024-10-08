@@ -13,7 +13,7 @@ export function Projects() {
                         className="bg-gray-700 p-6 rounded-lg transition-transform hover:scale-105"
                     >
                         <img
-                            src="./assets/project-placeholder.png"
+                            src="/assets/project-placeholder.png"
                             alt={project.title}
                             className="mb-4 rounded-md"
                         />
