@@ -1,4 +1,5 @@
 import heroImage from '../assets/hero-section.webp';
+import myResumeFile from '../assets/Resume - Shaked Aharon.pdf';
 export function Hero() {
     return (
         <div
@@ -8,9 +9,31 @@ export function Hero() {
                 backgroundImage: `url(${heroImage})`,
             }}
         >
-            <div className="bg-black bg-opacity-50 p-10 flex flex-col justify-center items-center h-screen rounded-md text-center">
-                <h1 className="text-5xl md:text-7xl font-bold">Welcome to My Portfolio</h1>
-                <p className="my-4 text-xl md:text-2xl">Senior Full Stack Developer</p>
+            <div className="bg-black bg-opacity-50 p-10 flex flex-col justify-center items-center h-screen rounded-md">
+                <div className='text-start mb-4'>
+                    <p>Hello! I am</p>
+                    <h1 className="text-5xl md:text-7xl font-bold">Shaked Aharon</h1>
+                    <p className="my-2 text-xl md:text-2xl">Senior Full Stack Developer</p>
+                </div>
+                {/* Call to Action Buttons */}
+                <div className="h-fit w-72 md:h-12 mb-4 flex flex-col gap-2 justify-center items-center md:flex-row">
+                    {/* Scroll to About Me Button */}
+                    <a
+                        href="#about"
+                        className="w-full text-center px-6 py-2 border border-white-500 text-white rounded-md hover:white-blue-600 transition"
+                    >
+                        About Me
+                    </a>
+
+                    {/* Download Resume Button */}
+                    <a
+                        href={myResumeFile} // Replace with the path to your resume file
+                        download
+                        className="w-full text-center px-6 py-2 bg-green-700 text-white rounded-md hover:bg-green-800 transition"
+                    >
+                        My Resume
+                    </a>
+                </div>
                 <div className="flex space-x-4 mb-6 md:mb-0">
                     <a href="https://github.com/Shaked-Aharon" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
                         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">

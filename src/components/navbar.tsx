@@ -1,4 +1,5 @@
 import { useState } from "react";
+import myResumeFile from '../assets/Resume - Shaked Aharon.pdf';
 
 export function Navbar() {
 
@@ -38,16 +39,32 @@ export function Navbar() {
                 </div>
                 <div className={`hidden md:flex items-center `}>
                     <a href="#hero" className="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700">Home</a>
+                    <a href="#about" className="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700">About Me</a>
                     <a href="#skills" className="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700">Skills</a>
                     <a href="#projects" className="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700">Projects</a>
                     <a href="#contact" className="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700">Contact</a>
+                    <a
+                        href={myResumeFile} // Replace with the path to your resume file
+                        download
+                        className="px-6 py-2 border border-2 border-green-700 text-white rounded-md hover:bg-green-800 transition"
+                    >
+                        My Resume
+                    </a>
                 </div>
             </div>
             <div className={`md:hidden md:flex items-center ${isOpen ? "block" : "hidden"}`}>
                 <a onClick={toggleMenu} href="#hero" className="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700">Home</a>
+                <a onClick={toggleMenu} href="#about" className="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700">About Me</a>
                 <a onClick={toggleMenu} href="#skills" className="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700">Skills</a>
                 <a onClick={toggleMenu} href="#projects" className="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700">Projects</a>
                 <a onClick={toggleMenu} href="#contact" className="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700">Contact</a>
+                <a
+                    href={myResumeFile} // Replace with the path to your resume file
+                    download
+                    className="inline-block m-2 px-6 py-2 border border-2 border-green-700 text-white rounded-md hover:bg-green-800 transition"
+                >
+                    My Resume
+                </a>
             </div>
         </nav>
 

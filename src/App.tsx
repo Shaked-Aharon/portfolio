@@ -5,6 +5,7 @@ import { Projects } from './components/projects';
 import { Skills } from './components/skills';
 import { Navbar } from './components/navbar';
 import { Hero } from './components/hero';
+import { AboutMe } from './components/about-me';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     <div className="bg-gray-900 text-white min-h-screen font-sans">
       <Navbar />
       <Hero />
+      <AboutMe />
       <Skills />
 
       <Projects />
