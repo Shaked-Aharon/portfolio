@@ -4,7 +4,7 @@ export function Hero() {
     return (
         <div
             id="hero"
-            className="hero-section h-screen bg-fixed bg-center bg-cover"
+            className="hero-section h-screen md:bg-fixed bg-center bg-cover"
             style={{
                 backgroundImage: `url(${heroImage})`,
             }}
