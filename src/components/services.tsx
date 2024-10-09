@@ -1,33 +1,39 @@
+import webIcon from '../assets/web-icon.svg';
+import mobileIcon from '../assets/mobile-icon.svg';
+import devopsIcon from '../assets/devops-icon.svg';
+import apiIcon from '../assets/api-icon.svg';
+import pluginIcon from '../assets/plugin-icon.svg';
+import automationIcon from '../assets/automation-icon.svg';
 const services = [
     {
         name: 'Web Development',
         description: 'Building responsive and modern web applications using the latest technologies like Vanila, React, Angular, WordPress and more.',
-        icon: './public/web-icon.svg'
+        icon: webIcon
     },
     {
         name: 'Mobile Development',
         description: 'Creating mobile applications for iOS and Android platforms with React Native and Ionic frameworks.',
-        icon: './public/mobile-icon.svg'
+        icon: mobileIcon
     },
     {
         name: 'API Development',
         description: 'Designing and building secure RESTful and GraphQL APIs to support front-end and mobile applications.',
-        icon: './public/api-icon.svg'
+        icon: apiIcon
     },
     {
         name: 'DevOps',
         description: 'Setting up cloud infrastructure using AWS, Azure, or Google Cloud for scalable and secure deployments. This includes configuring CI/CD pipelines to automate deployments and manage applications efficiently.',
-        icon: './public/devops-icon.svg'
+        icon: devopsIcon
     },
     {
         name: 'Plugin and Extension Development',
         description: 'Developing custom plugins or extensions for platforms like WordPress, Shopify, or Trello to extend their capabilities according to client requirements. This includes API integrations, custom functionalities, and providing user-friendly admin interfaces for ease of use.',
-        icon: './public/plugin-icon.svg'
+        icon: pluginIcon
     },
     {
         name: 'Automation and Scripting Solutions',
         description: 'Automating repetitive tasks and processes using scripting languages like Python or JavaScript. This includes building bots, data scraping tools, and automation scripts for infrastructure management and deployment.',
-        icon: './public/automation-icon.svg'
+        icon: automationIcon
     },
 
 ]
