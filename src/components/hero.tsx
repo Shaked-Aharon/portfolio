@@ -1,10 +1,30 @@
+import { useEffect } from 'react';
 import heroImage from '../assets/hero-section.webp';
 import myResumeFile from '../assets/Resume - Shaked Aharon.pdf';
 export function Hero() {
+    const isIOS = () => {
+        return (
+            /iPad|iPhone|iPod/.test(navigator.userAgent)
+        );
+    };
+    useEffect(() => {
+        if (window.screen.width > 768 || !isIOS()) return;
+        const handleScroll = () => {
+            const hero = document.getElementById("hero");
+            const yOffset = window.scrollY;
+            if (hero) hero.style.backgroundPosition = `center ${yOffset * 0.5}px`;
+        };
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
         <div
             id="hero"
-            className="hero-section h-screen md:bg-fixed bg-center bg-cover"
+            className="hero-section h-screen bg-fixed bg-center bg-cover"
             style={{
                 backgroundImage: `url(${heroImage})`,
             }}

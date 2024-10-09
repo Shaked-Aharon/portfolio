@@ -17,7 +17,7 @@ export function Skills() {
                     <div key={category.name}>
                         <p className="font-bold bg-gray-700 px-2 py-1 rounded-t">{category.name}</p>
                         <ul className="border border-gray-700 p-2">
-                            {category.skills.map(skill => <li>{skill}</li>)}
+                            {category.skills.map(skill => <li key={skill}>{skill}</li>)}
                         </ul>
                     </div>
                     // <div
