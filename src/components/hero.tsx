@@ -12,7 +12,7 @@ export function Hero() {
         const handleScroll = () => {
             const hero = document.getElementById("hero");
             const yOffset = window.scrollY;
-            if (hero) hero.style.backgroundPosition = `center ${yOffset * -0.5}px`;
+            if (hero) hero.style.backgroundPosition = `center ${yOffset * - 0.2}px`;
         };
         window.addEventListener("scroll", handleScroll);
 
