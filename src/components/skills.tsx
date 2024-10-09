@@ -1,11 +1,12 @@
 const skills = [
-    {name: 'Languages', skills: ['JavaScript', 'TypeScript', 'C#', 'Python', 'Java', 'PHP', 'Dart']},
-    {name: 'Frameworks', skills: ['.Net Core', 'ASP.Net', 'Angular', 'React', 'React Native', 'NestJS', 'NextJS', 'ExpressJS', 'Django', 'Flask', 'Tkinter', 'Flutter', 'WordPress']},
-    {name: 'Databases', skills: ['MySQL', 'MariaDB', 'MongoDB', 'Redis']},
-    {name: 'DevOps', skills: ['Jenkins', 'CI/CD', 'AWS', 'Nginx', 'IIS', 'Virtualization']},
-    {name: 'Technologies', skills: ['Jest', 'ORM', 'Template Engine', 'Microservices', 'Caching']},
-    {name: 'Tools', skills: ['Git', 'Github', 'BitBucket', 'Umbraco']},
-    {name: 'OS', skills: ['Linux', 'Windows']},
+    { name: 'Languages', skills: ['JavaScript', 'TypeScript', 'C#', 'Python', 'Java', 'PHP', 'Dart'] },
+    { name: 'Frameworks', skills: ['.Net Core', 'ASP.Net', 'Angular', 'React', 'React Native', 'NestJS', 'NextJS', 'ExpressJS', 'Django', 'Flask', 'Tkinter', 'Flutter', 'WordPress'] },
+    { name: 'Databases', skills: ['MySQL', 'MariaDB', 'MongoDB', 'Redis'] },
+    { name: 'Architecture', skills: ['Microservices', 'Monolithic', 'Event-Driven', 'Serverless', 'BFF', 'API Gateway', 'Onion'] },
+    { name: 'DevOps', skills: ['Jenkins', 'CI/CD', 'AWS', 'Nginx', 'IIS', 'Virtualization'] },
+    { name: 'Technologies', skills: ['Jest', 'ORM', 'Template Engine', 'Caching'] },
+    { name: 'Tools', skills: ['Git', 'Github', 'BitBucket', 'Umbraco'] },
+    { name: 'OS', skills: ['Linux', 'Windows'] },
 ]
 
 export function Skills() {
@@ -20,17 +21,6 @@ export function Skills() {
                             {category.skills.map(skill => <li key={skill}>{skill}</li>)}
                         </ul>
                     </div>
-                    // <div
-                    //     key={index}
-                    //     className="flex flex-col items-center transition-transform hover:scale-105"
-                    // >
-                    //     <img
-                    //         src="/assets/skill-icon.png"
-                    //         alt={skill}
-                    //         className="w-16 h-16 mb-4"
-                    //     />
-                    //     <p className="text-lg">{skill}</p>
-                    // </div>
                 ))}
             </div>
         </section>
