@@ -7,7 +7,6 @@ import { Navbar } from './components/navbar';
 import { Hero } from './components/hero';
 import { AboutMe } from './components/about-me';
 import { Services } from './components/services';
-import { SkillsTreeView } from './components/skills-tree-view';
 
 function App() {
 
@@ -16,7 +15,6 @@ function App() {
       <Navbar />
       <Hero />
       <AboutMe />
-      <SkillsTreeView />
       <Skills />
 
       <Projects />

@@ -1,11 +1,12 @@
 export function Footer() {
     return (
-        < footer className = "bg-gray-800 py-10 mt-20" >
+        < footer className="bg-gray-800 py-10 mt-20" >
             <div className="container mx-auto px-6 md:px-20">
                 <div className="flex flex-col md:flex-row justify-between items-center">
                     {/* Footer Navigation Links */}
                     <div className="flex space-x-6 mb-6 md:mb-0">
                         <a href="#hero" className="text-gray-300 hover:text-white">Home</a>
+                        <a href="#about" className="text-gray-300 hover:text-white">About Me</a>
                         <a href="#skills" className="text-gray-300 hover:text-white">Skills</a>
                         <a href="#projects" className="text-gray-300 hover:text-white">Projects</a>
                         <a href="#contact" className="text-gray-300 hover:text-white">Contact</a>
@@ -32,6 +33,6 @@ export function Footer() {
                     </div>
                 </div>
             </div>
-    </footer >
+        </footer >
     )
 }
