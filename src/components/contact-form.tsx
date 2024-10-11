@@ -31,6 +31,8 @@ export function Contact() {
                         Name
                     </label>
                     <input
+                        required
+                        minLength={3}
                         type="text"
                         id="name"
                         name="user_name"
@@ -42,6 +44,7 @@ export function Contact() {
                         Email
                     </label>
                     <input
+                        required
                         type="email"
                         id="email"
                         name="user_email"
@@ -53,6 +56,8 @@ export function Contact() {
                         Message
                     </label>
                     <textarea
+                        minLength={8}
+                        required
                         id="message"
                         rows={4}
                         name="message"
