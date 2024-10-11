@@ -14,7 +14,7 @@ export function Navbar() {
 
 
     return (
-        <nav className="bg-gray-800 fixed w-full z-10 shadow-lg">
+        <nav className="bg-gray-800 fixed w-full z-20 shadow-lg">
             <div className="container mx-auto px-6 py-3 flex justify-between items-center">
                 <div className="text-2xl font-bold">
                     <a href="#hero" className="text-white">
