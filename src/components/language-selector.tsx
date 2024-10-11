@@ -47,7 +47,7 @@ import { useTranslation } from 'react-i18next';
 import translateIcon from '../assets/translate-icon.svg';
 
 const LanguageSelector: React.FC = () => {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -80,21 +80,22 @@ const LanguageSelector: React.FC = () => {
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-800 hover:bg-gray-700 transition duration-200"
+        className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-800 hover:bg-gray-700 transition duration-200 mx-4"
       >
         <span role="img" aria-label="Language" className="text-white">
           <img src={translateIcon} alt="" width={24}/>
         </span>
       </button>
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-40 bg-gray-800 border border-gray-700 rounded-lg shadow-lg p-2">
+        <div className={"absolute mt-2 w-40 bg-gray-800 border border-gray-700 rounded-lg shadow-lg p-2 " + (i18n.language === 'en' ? 'right-0 ' : 'left-0 ')}>
           <button
             onClick={() => changeLanguage('en')}
             className={`flex items-center justify-center w-full p-2 rounded-md transition duration-200 ${
               i18n.language === 'en' ? 'bg-green-700 text-white' : 'hover:bg-gray-700 text-gray-300'
             }`}
           >
-            🇺🇸 English
+            {/* 🇺🇸 English */}
+            {t('LanguageSelector.EN')}
           </button>
           <button
             onClick={() => changeLanguage('he')}
@@ -102,7 +103,8 @@ const LanguageSelector: React.FC = () => {
               i18n.language === 'he' ? 'bg-green-700 text-white' : 'hover:bg-gray-700 text-gray-300'
             }`}
           >
-            🇮🇱 Hebrew
+            {t('LanguageSelector.HE')}
+            {/* 🇮🇱 Hebrew */}
           </button>
         </div>
       )}

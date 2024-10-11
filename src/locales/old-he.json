@@ -1,0 +1,59 @@
+{
+    "Navbar": {
+        "Home": "דף הבית",
+        "AboutMe": "אודות",
+        "Skills": "יכולות",
+        "Projects": "פרוייקטים",
+        "Contact": "צור קשר",
+        "MyResume": "קורות חיים"
+    },
+    "LanguageSelector":{
+        "HE": "🇮🇱 עברית",
+        "EN": "🇺🇸 אנגלית"
+    },
+    "EmailSentModal": {
+        "Title": "אימייל נשלח",
+        "Description": "האימייל שלך נשלח בהצלחה. אני אחזור אליך בהקדם. תודה על פנייתך!",
+        "Close": "סגירה"
+    },
+    "Hero": {
+        "Name": "שקד אהרון",
+        "Hello": "שלום! אני",
+        "Title": "מפתח Full Stack בכיר"
+    },
+    "AboutMe": {
+        "Title": "קצת עלי",
+        "Start": "אני מוביל טכנולוגי מסור | מפתח Full-Stack",
+        "Description": "עם ניסיון של למעלה מ-5 שנים בפיתוח תוכנה. התשוקה שלי ללמידה ולהתמודדות עם אתגרים חדשים אפשרה לי להוביל צוותים ביעילות ולספק פתרונות באיכות גבוהה וניתנים להרחבה. בתור לומד מהיר ואוטודידקט, אני מחפש ללא הרף הזדמנויות לחדש ולהניע הצלחה",
+        "Extra": "אני מאמין בכוח של קוד נקי יעילים, ואני לומד כל הזמן טכניקות וכלים חדשות לשיפור מערך המיומנויות שלי. כשאני לא מקודד ואני אוהב לחקור טכנולוגיות חדשות."
+    },
+    "Skills": {
+        "Title": "יכולות"
+    },
+    "Projects": {
+        "Title": "פרוייקטים",
+        "Synca": "פתרון אוטומציה לסנכרון מלאי ומסחר אלקטרוני. יעילות מוגברת ב-40% באמצעות עדכונים אוטומטיים ועיבוד הזמנות.",
+        "AskBot": "עוזר אישי משולב עם AT על מנת לאפשר תגובות מותאמות, זרימות עבודה ניתנות להתאמה וחוויות מותאמות אישית המתאימות לתעשיות שונות. שיפור מעורבות הלקוחות ב-35% עבור משתמשי הפלטפורמה.",
+        "WordPress Products Feed": "תוסף וורדפרס המוסיף פונקציונליות הזנה של מוצרי XML, הכולל ממשק ניהול ליצירת אסימונים מאובטחים לגישה מוגנת לעדכון. הוא גם מספק כתובת URL פשוטה הניתנת להעתקה לשילוב הפיד עם פלטפורמות אחרות, תוך שיפור האבטחה והשימושיות כאחד.",
+        "Trello Agile Kit": "Trello Power-Up שמוסיף תכונות זריזות כמו תיוג כרטיסים (למשל, 'באג', 'משימה'), תעדוף משימות וניהול תבניות כרטיסים. כלי זה מייעל את זרימות העבודה ומשפר את ניהול המשימות עבור צוותי פיתוח זריזים.",
+        "Visit": "מעבר",
+        "More": "עוד"
+    },
+    "Services": {
+        "Title": "שירותים",
+        "Web Development": "בניית אפליקציות אינטרנט רספונסיביות ומודרניות תוך שימוש בטכנולוגיות העדכניות ביותר כמו Vanila, React, Angular, WordPress ועוד.",
+        "Mobile Development": "יצירת אפליקציות סלולריות לפלטפורמות iOS ואנדרואיד עם מסגרות React Native, Flutter ו-Ionic.",
+        "API Development": "עיצוב ובניית RESTful מאובטח לתמיכה באתרי אינטרנט, יישומי שולחן עבודה ויישומים ניידים.",
+        "DevOps": "הגדרת תשתית ענן באמצעות AWS, Azure או Google Cloud לפריסות מדרגיות ומאובטחות. זה כולל הגדרת צינורות CI/CD כדי להפוך פריסות לאוטומטיות ולנהל יישומים ביעילות.",
+        "Plugin and Extension Development": "פיתוח תוספים או הרחבות מותאמים אישית לפלטפורמות כמו WordPress, Shopify או Trello כדי להרחיב את היכולות שלהם בהתאם לדרישות הלקוח. זה כולל שילובי API, פונקציונליות מותאמות אישית ואספקת ממשקי ניהול ידידותיים למשתמש עבור קלות שימוש.",
+        "Automation and Scripting Solutions": "אוטומציה של משימות ותהליכים שחוזרים על עצמם באמצעות שפות סקריפטים כמו Python או JavaScript. זה כולל בניית בוטים, כלי כריית נתונים ותסריטי אוטומציה לניהול ופריסה של תשתית."
+    },
+    "Contact": {
+        "Title": "צור איתי קשר",
+        "Name": "שם מלא",
+        "Email": "אימייל",
+        "Message": "הודעה",
+        "Submit": "שלח הודעה"
+    },
+    "CopyRights": "© 2024 Shaked Aharon. All Rights Reserved."
+}

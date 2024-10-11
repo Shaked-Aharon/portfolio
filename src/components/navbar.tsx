@@ -5,7 +5,7 @@ import LanguageSelector from "./language-selector";
 import { useTranslation } from "react-i18next";
 
 export function Navbar() {
-    const {t} = useTranslation();
+    const { t } = useTranslation();
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -52,6 +52,7 @@ export function Navbar() {
                     <a href="#about" className="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700">{t('Navbar.AboutMe')}</a>
                     <a href="#skills" className="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700">{t('Navbar.Skills')}</a>
                     <a href="#projects" className="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700">{t('Navbar.Projects')}</a>
+                    <a href="#services" className="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700">{t('Navbar.Services')}</a>
                     <a href="#contact" className="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700">{t('Navbar.Contact')}</a>
                     <a
                         href={myResumeFile} // Replace with the path to your resume file
@@ -68,15 +69,18 @@ export function Navbar() {
                 <a onClick={toggleMenu} href="#about" className="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700">{t('Navbar.AboutMe')}</a>
                 <a onClick={toggleMenu} href="#skills" className="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700">{t('Navbar.Skills')}</a>
                 <a onClick={toggleMenu} href="#projects" className="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700">{t('Navbar.Projects')}</a>
+                <a onClick={toggleMenu} href="#services" className="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700">{t('Navbar.Services')}</a>
                 <a onClick={toggleMenu} href="#contact" className="block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700">{t('Navbar.Contact')}</a>
-                <a
-                    href={myResumeFile} // Replace with the path to your resume file
-                    download
-                    className="inline-block m-2 px-6 py-2 border border-2 border-green-700 text-white rounded-md hover:bg-green-800 transition"
-                >
-                    {t('Navbar.MyResume')}
-                </a>
-                <LanguageSelector />
+                <span className="flex justify-between items-center">
+                    <a
+                        href={myResumeFile} // Replace with the path to your resume file
+                        download
+                        className="inline-block m-2 px-6 py-2 border border-2 border-green-700 text-white rounded-md hover:bg-green-800 transition"
+                    >
+                        {t('Navbar.MyResume')}
+                    </a>
+                    <LanguageSelector />
+                </span>
             </div>
         </nav>
 

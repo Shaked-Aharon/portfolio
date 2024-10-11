@@ -1,9 +1,11 @@
 import emailjs from '@emailjs/browser';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import EmailSentModal from './email-send-modal';
 
 export function Contact() {
     const { t } = useTranslation();
+    const [isModalOpen, setIsModalOpen] = useState(false);
     const form = useRef<HTMLFormElement>();
 
     const sendEmail = (e: any) => {
@@ -17,6 +19,7 @@ export function Contact() {
                 () => {
                     console.log('SUCCESS!');
                     form.current?.reset();
+                    setIsModalOpen(true);
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
@@ -26,6 +29,7 @@ export function Contact() {
 
     return (
         <section id="contact" className="contact-section pt-10 px-6 md:px-20">
+            <EmailSentModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}/>
             <h2 className="text-4xl font-semibold text-center mb-10">{t('Contact.Title')}</h2>
             <form className="max-w-2xl mx-auto bg-gray-800 p-8 rounded-lg" ref={form as any} onSubmit={sendEmail}>
                 <div className="mb-4">
@@ -68,7 +72,7 @@ export function Contact() {
                 </div>
                 <button
                     type="submit"
-                    className="w-full py-2 mt-4 bg-blue-500 rounded-md hover:bg-blue-600"
+                    className="w-full py-2 mt-4 bg-green-600 rounded-md hover:bg-green-700"
                 >
                     {t('Contact.Submit')}
                 </button>

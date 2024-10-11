@@ -5,13 +5,14 @@ export function Footer() {
     return (
         < footer className="bg-gray-800 py-10 mt-20" >
             <div className="container mx-auto px-6 md:px-20">
-                <div className="flex flex-col md:flex-row justify-between items-center">
+                <div className="flex flex-col gap-2 lg:flex-row justify-between items-center">
                     {/* Footer Navigation Links */}
                     <div className="flex gap-6 mb-6 md:mb-0">
                         <a href="#hero" className="text-gray-300 hover:text-white">{t('Navbar.Home')}</a>
                         <a href="#about" className="text-gray-300 hover:text-white">{t('Navbar.AboutMe')}</a>
                         <a href="#skills" className="text-gray-300 hover:text-white">{t('Navbar.Skills')}</a>
                         <a href="#projects" className="text-gray-300 hover:text-white">{t('Navbar.Projects')}</a>
+                        <a href="#services" className="text-gray-300 hover:text-white">{t('Navbar.Services')}</a>
                         <a href="#contact" className="text-gray-300 hover:text-white">{t('Navbar.Contact')}</a>
                     </div>
 

@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next"
 
 const skills = [
     { name: 'Languages', skills: ['JavaScript', 'TypeScript', 'C#', 'Python', 'Java', 'PHP', 'Dart', 'SQL', 'Bash', 'HTML', 'CSS'] },
-    { name: 'Frameworks', skills: ['.Net Core', 'ASP.Net', 'Angular', 'React', 'React Native', 'NestJS', 'NextJS', 'ElectronJS', 'ExpressJS', 'Django', 'Flask', 'Tkinter', 'Flutter', 'WordPress'] },
+    { name: 'Frameworks', skills: ['.Net Core', 'ASP.Net', 'Angular', 'React', 'React Native', 'NestJS', 'ElectronJS', 'ExpressJS', 'Django', 'Flask', 'Tkinter', 'Flutter', 'WordPress'] },
     { name: 'Databases', skills: ['MySQL', 'MariaDB', 'SQLite', 'MongoDB', 'Redis', 'Firebase Realtime'] },
     { name: 'Architecture', skills: ['Microservices', 'Monolithic', 'Event-Driven', 'Serverless', 'BFF', 'API Gateway', 'Onion', 'Modular Architecture'] },
     { name: 'DevOps', skills: ['Jenkins', 'CI/CD', 'AWS', 'GCP', 'Nginx', 'IIS', 'Virtualization'] },
