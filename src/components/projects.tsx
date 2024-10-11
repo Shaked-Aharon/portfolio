@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next"
+import backgroundImage from '../assets/card-background-image.png';
 
 const projects = [
     {
@@ -27,15 +28,22 @@ const projects = [
     },
 ]
 export function Projects() {
-    const {t} = useTranslation();
+    const { t } = useTranslation();
     return (
-        <section id="projects" className="projects-section py-20 px-6 md:px-20 bg-gray-800">
+        <section id="projects" className="projects-section py-20 px-6 md:px-20 bg-gray-800 relative">
+            <div
+                className="absolute bg-center bg-cover w-full h-full top-0 right-0 opacity-5"
+                style={{
+                    backgroundImage: `url(${backgroundImage})`,
+                }}
+            >
+            </div>
             <h2 className="text-4xl font-semibold text-center mb-10">{t('Projects.Title')}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {projects.map((project, index) => (
                     <div
                         key={index}
-                        className="bg-gray-700 p-6 rounded-lg transition-transform hover:scale-105 flex flex-col"
+                        className="bg-gray-700 p-6 rounded-lg flex flex-col z-10"
                     >
                         {/* <img
                             src="/assets/project-placeholder.png"
@@ -46,13 +54,13 @@ export function Projects() {
                         <p className="text-gray-300">
                             {t(`Projects.${project.title}`)}
                             {/* {project.description} */}
-                            </p>
+                        </p>
                         <span className="flex-1"></span>
-                        {project.link ? <a href={project.link} target="_blank" className="inline-block mt-2 font-bold">{t('Projects.Visit')}</a> : <></>}
+                        {project.link ? <a href={project.link} target="_blank" className="inline-block mt-2 font-bold hover:opacity-100">{t('Projects.Visit')}</a> : <></>}
                     </div>
                 ))}
             </div>
-                <a href="https://github.com/Shaked-Aharon" target="_blank" className="border border-white rounded px-6 py-2 mt-4 inline-block">{t('Projects.More')}</a>
+            <a href="https://github.com/Shaked-Aharon" target="_blank" className="border border-white rounded px-6 py-2 mt-4 inline-block">{t('Projects.More')}</a>
         </section>
     )
 }

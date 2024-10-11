@@ -5,6 +5,8 @@ import apiIcon from '../assets/api-icon.svg';
 import pluginIcon from '../assets/plugin-icon.svg';
 import automationIcon from '../assets/automation-icon.svg';
 import { useTranslation } from 'react-i18next';
+import backgroundImage from '../assets/service-background-image.png';
+
 const services = [
     {
         name: 'Web Development',
@@ -46,7 +48,18 @@ export function Services() {
                 <h2 className="text-4xl font-semibold text-center mb-10">{t('Services.Title')}</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {services.map(service => (
-                        <div key={service.name} className="bg-gray-800 p-6 rounded-lg transition-transform hover:scale-105">
+                        <div
+                            key={service.name}
+                            className="bg-gray-800 p-6 rounded-lg transition-transform hover:scale-105 relative"
+                        >
+                            <div
+                                className="absolute bg-center w-full h-full top-0 right-0 opacity-10"
+                                style={{
+                                    backgroundImage: `url(${backgroundImage})`,
+                                }}
+                            >
+                            </div>
+
                             <div className="flex justify-center mb-4">
                                 <img src={service.icon} alt={service.name} className="w-16 h-16" />
                             </div>

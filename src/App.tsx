@@ -1,4 +1,3 @@
-import './App.css'
 import { Footer } from './components/footer';
 import { Contact } from './components/contact-form';
 import { Projects } from './components/projects';

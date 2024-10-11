@@ -7,13 +7,13 @@ export function Footer() {
             <div className="container mx-auto px-6 md:px-20">
                 <div className="flex flex-col gap-2 lg:flex-row justify-between items-center">
                     {/* Footer Navigation Links */}
-                    <div className="flex gap-6 mb-6 md:mb-0">
-                        <a href="#hero" className="text-gray-300 hover:text-white">{t('Navbar.Home')}</a>
-                        <a href="#about" className="text-gray-300 hover:text-white">{t('Navbar.AboutMe')}</a>
-                        <a href="#skills" className="text-gray-300 hover:text-white">{t('Navbar.Skills')}</a>
-                        <a href="#projects" className="text-gray-300 hover:text-white">{t('Navbar.Projects')}</a>
-                        <a href="#services" className="text-gray-300 hover:text-white">{t('Navbar.Services')}</a>
-                        <a href="#contact" className="text-gray-300 hover:text-white">{t('Navbar.Contact')}</a>
+                    <div className="grid grid-cols-3 md:grid-cols-6 gap-3 text-center mb-6 md:mb-0">
+                        <a href="#hero" className="flex-col text-gray-300 hover:text-white">{t('Navbar.Home')}</a>
+                        <a href="#about" className="flex-col text-gray-300 hover:text-white">{t('Navbar.AboutMe')}</a>
+                        <a href="#skills" className="flex-col text-gray-300 hover:text-white">{t('Navbar.Skills')}</a>
+                        <a href="#projects" className="flex-col text-gray-300 hover:text-white">{t('Navbar.Projects')}</a>
+                        <a href="#services" className="flex-col text-gray-300 hover:text-white">{t('Navbar.Services')}</a>
+                        <a href="#contact" className="flex-col text-gray-300 hover:text-white">{t('Navbar.Contact')}</a>
                     </div>
 
                     {/* Social Media Links */}

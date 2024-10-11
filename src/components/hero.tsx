@@ -4,8 +4,8 @@ import myResumeFile from '../assets/Resume - Shaked Aharon.pdf';
 import { useTranslation } from 'react-i18next';
 import { isIOS } from '../utils';
 export function Hero() {
-    const {t} = useTranslation();
-    
+    const { t } = useTranslation();
+
     useEffect(() => {
         if (window.screen.width > 768 || !isIOS()) return;
         const handleScroll = () => {
@@ -28,7 +28,7 @@ export function Hero() {
                 backgroundImage: `url(${heroImage})`,
             }}
         >
-            <div className="bg-black bg-opacity-50 p-10 flex flex-col justify-center items-center h-screen rounded-md">
+            <div className="bg-black bg-opacity-60 p-10 flex flex-col justify-center items-center h-screen rounded-md">
                 <div className='text-start mb-4'>
                     <p>{t('Hero.Hello')}</p>
                     <h1 className="text-5xl md:text-7xl font-bold">{t('Hero.Name')}</h1>
@@ -65,6 +65,16 @@ export function Hero() {
                         </svg>
                     </a>
                     {/* Add more social media links as needed */}
+                </div>
+                <div className='spacer h-2 md:h-24'>
+
+                </div>
+                <div className="flex justify-center mt-10">
+                    <a href="#about" className="animate-bounce">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-10 h-10 text-white">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
