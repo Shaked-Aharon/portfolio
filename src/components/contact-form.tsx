@@ -1,12 +1,14 @@
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export function Contact() {
+    const { t } = useTranslation();
     const form = useRef<HTMLFormElement>();
 
     const sendEmail = (e: any) => {
         e.preventDefault();
-        if(!form.current) return;
+        if (!form.current) return;
         emailjs
             .sendForm('service_pb4tkie', 'template_h1p1ugm', form.current, {
                 publicKey: '9jwGM10UmkC9qFQ-w',
@@ -24,11 +26,11 @@ export function Contact() {
 
     return (
         <section id="contact" className="contact-section pt-10 px-6 md:px-20">
-            <h2 className="text-4xl font-semibold text-center mb-10">Contact Me</h2>
+            <h2 className="text-4xl font-semibold text-center mb-10">{t('Contact.Title')}</h2>
             <form className="max-w-2xl mx-auto bg-gray-800 p-8 rounded-lg" ref={form as any} onSubmit={sendEmail}>
                 <div className="mb-4">
                     <label className="block text-sm mb-2" htmlFor="name">
-                        Name
+                        {t('Contact.Name')}
                     </label>
                     <input
                         required
@@ -41,7 +43,7 @@ export function Contact() {
                 </div>
                 <div className="mb-4">
                     <label className="block text-sm mb-2" htmlFor="email">
-                        Email
+                        {t('Contact.Email')}
                     </label>
                     <input
                         required
@@ -53,7 +55,7 @@ export function Contact() {
                 </div>
                 <div className="mb-4">
                     <label className="block text-sm mb-2" htmlFor="message">
-                        Message
+                        {t('Contact.Message')}
                     </label>
                     <textarea
                         minLength={8}
@@ -68,7 +70,7 @@ export function Contact() {
                     type="submit"
                     className="w-full py-2 mt-4 bg-blue-500 rounded-md hover:bg-blue-600"
                 >
-                    Send Message
+                    {t('Contact.Submit')}
                 </button>
             </form>
         </section>

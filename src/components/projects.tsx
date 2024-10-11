@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next"
+
 const projects = [
     {
         title: "Synca", description: `Created an automation solution for inventory and eCommerce synchronization.
@@ -25,9 +27,10 @@ const projects = [
     },
 ]
 export function Projects() {
+    const {t} = useTranslation();
     return (
         <section id="projects" className="projects-section py-20 px-6 md:px-20 bg-gray-800">
-            <h2 className="text-4xl font-semibold text-center mb-10">Projects</h2>
+            <h2 className="text-4xl font-semibold text-center mb-10">{t('Projects.Title')}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {projects.map((project, index) => (
                     <div
@@ -40,13 +43,16 @@ export function Projects() {
                             className="mb-4 rounded-md"
                         /> */}
                         <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
-                        <p className="text-gray-300">{project.description}</p>
+                        <p className="text-gray-300">
+                            {t(`Projects.${project.title}`)}
+                            {/* {project.description} */}
+                            </p>
                         <span className="flex-1"></span>
-                        {project.link ? <a href={project.link} target="_blank" className="inline-block mt-2 font-bold">visit</a> : <></>}
+                        {project.link ? <a href={project.link} target="_blank" className="inline-block mt-2 font-bold">{t('Projects.Visit')}</a> : <></>}
                     </div>
                 ))}
             </div>
-                <a href="https://github.com/Shaked-Aharon" target="_blank" className="border border-white rounded px-6 py-2 mt-4 inline-block">More</a>
+                <a href="https://github.com/Shaked-Aharon" target="_blank" className="border border-white rounded px-6 py-2 mt-4 inline-block">{t('Projects.More')}</a>
         </section>
     )
 }

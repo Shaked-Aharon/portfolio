@@ -4,6 +4,7 @@ import devopsIcon from '../assets/devops-icon.svg';
 import apiIcon from '../assets/api-icon.svg';
 import pluginIcon from '../assets/plugin-icon.svg';
 import automationIcon from '../assets/automation-icon.svg';
+import { useTranslation } from 'react-i18next';
 const services = [
     {
         name: 'Web Development',
@@ -38,10 +39,11 @@ const services = [
 
 ]
 export function Services() {
+    const { t } = useTranslation();
     return (
         < section id="services" className="services-section py-20 px-6 md:px-20 bg-gray-900" >
             <div className="container mx-auto">
-                <h2 className="text-4xl font-semibold text-center mb-10">Services Offered</h2>
+                <h2 className="text-4xl font-semibold text-center mb-10">{t('Services.Title')}</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {services.map(service => (
                         <div key={service.name} className="bg-gray-800 p-6 rounded-lg transition-transform hover:scale-105">
@@ -50,7 +52,8 @@ export function Services() {
                             </div>
                             <h3 className="text-2xl font-semibold mb-2 text-center">{service.name}</h3>
                             <p className="text-gray-300 text-center">
-                                {service.description}
+                                {t(`Services.${service.name}`)}
+                                {/* {service.description} */}
                             </p>
                         </div>
                     ))}

@@ -1,0 +1,50 @@
+{
+    "Navbar": {
+        "Home": "Home",
+        "AboutMe": "About Me",
+        "Skills": "Skills",
+        "Projects": "Projects",
+        "Contact": "Contact",
+        "MyResume": "My Resume"
+    },
+    "Hero": {
+        "Name": "Shaked Aharon",
+        "Hello": "Hello! I am",
+        "Title": "Senior Full Stack Developer"
+    },
+    "AboutMe": {
+        "Title": "About Me",
+        "Start": "I am a dedicated Tech Lead | Full-Stack Developer",
+        "Description": "with over 5 years of experience in software development. My passion for learning and tackling new challenges has allowed me to lead teams effectively and deliver high-quality, scalable solutions. As a quick learner and autodidact, I continuously seek opportunities to innovate and drive success",
+        "Extra": "I believe in the power of clean code and efficient solutions, and I'm constantly learning new techniques and frameworks to improve my skill set. When I'm not coding and I love exploring new technologies."
+    },
+    "Skills": {
+        "Title": "Skills"
+    },
+    "Projects": {
+        "Title": "Projects",
+        "Synca": "Created an automation solution for inventory and eCommerce synchronization. Increased efficiency by 40% through automated updates and order processing.",
+        "AskBot": "Personal Assistant integrated with AT in order to Enabled tailored responses, adaptable workflows, and personalized experiences suitable for various industries. Improved customer engagement by 35% for users of the platform.",
+        "WordPress Products Feed": "WordPress plugin that adds XML products feed functionality, featuring an admin interface to securely generate tokens for protected feed access. It also provides a simple copyable URL for integrating the feed with other platforms, enhancing both security and usability.",
+        "Trello Agile Kit": "Trello Power-Up that adds agile features like tagging cards (e.g., 'bug', 'task'), prioritizing tasks, and managing card templates. This tool streamlines workflows and enhances task management for agile development teams.",
+        "Visit": "Visit",
+        "More": "More"
+    },
+    "Services": {
+        "Title": "Services Offered",
+        "Web Development": "Building responsive and modern web applications using the latest technologies like Vanila, React, Angular, WordPress and more.",
+        "Mobile Development": "Creating mobile applications for iOS and Android platforms with React Nativeת Flutter and Ionic frameworks.",
+        "API Development": "Designing and building secure RESTful to support Websites, Desktop Applications and Mobile applications.",
+        "DevOps": "Setting up cloud infrastructure using AWS, Azure, or Google Cloud for scalable and secure deployments. This includes configuring CI/CD pipelines to automate deployments and manage applications efficiently.",
+        "Plugin and Extension Development": "Developing custom plugins or extensions for platforms like WordPress, Shopify, or Trello to extend their capabilities according to client requirements. This includes API integrations, custom functionalities, and providing user-friendly admin interfaces for ease of use.",
+        "Automation and Scripting Solutions": "Automating repetitive tasks and processes using scripting languages like Python or JavaScript. This includes building bots, data scraping tools, and automation scripts for infrastructure management and deployment."
+    },
+    "Contact": {
+        "Title": "Contact Me",
+        "Name": "Name",
+        "Email": "Email",
+        "Message": "Message",
+        "Submit": "Send Message"
+    },
+    "CopyRights": "© 2024 Shaked Aharon. All Rights Reserved."
+}
