@@ -18,7 +18,8 @@
         "Close": "Close"
     },
     "Hero": {
-        "Name": "Shaked Aharon",
+        "FirstName": "Shaked",
+        "LastName": "Aharon",
         "Hello": "Hello! I am",
         "Title": "Senior Full Stack Developer"
     },
@@ -39,6 +40,11 @@
         "Trello Agile Kit": "Trello Power-Up that adds agile features like tagging cards (e.g., 'bug', 'task'), prioritizing tasks, and managing card templates. This tool streamlines workflows and enhances task management for agile development teams.",
         "Visit": "Visit",
         "More": "More"
+    },
+    "Articles": {
+        "Title": "Articles",
+        "Jenkins CI/CD": "If you’re looking to automate your development process — building, testing, deploying — all while sipping coffee, Jenkins has your back. It’s a go-to tool for many developers when setting up Continuous Integration and Continuous Delivery (CI/CD). ",
+        "Read": "Read"
     },
     "Services": {
         "Title": "Services Offered",

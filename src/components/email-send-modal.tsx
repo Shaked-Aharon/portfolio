@@ -19,7 +19,7 @@ const EmailSentModal: React.FC<EmailSentModalProps> = ({ isOpen, onClose }) => {
                 </p>
                 <button
                     onClick={onClose}
-                    className="w-full py-2 bg-green-600 rounded-md hover:bg-green-700 transition duration-200"
+                    className="w-full py-2 bg-teal-500 rounded-md hover:bg-teal-600 transition duration-200"
                 >
                     {t('EmailSentModal.Close')}
                 </button>

@@ -72,7 +72,7 @@ export function Contact() {
                 </div>
                 <button
                     type="submit"
-                    className="w-full py-2 mt-4 bg-green-600 rounded-md hover:bg-green-700"
+                    className="w-full py-2 mt-4 bg-teal-500 rounded-md hover:bg-teal-600"
                 >
                     {t('Contact.Submit')}
                 </button>

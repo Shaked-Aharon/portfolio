@@ -57,7 +57,7 @@ export function Navbar() {
                     <a
                         href={myResumeFile} // Replace with the path to your resume file
                         download
-                        className="px-6 py-2 border border-2 border-green-700 text-white rounded-md hover:bg-green-800 transition"
+                        className="px-6 py-2 border border-2 border-teal-500 text-white rounded-md hover:bg-teal-600 transition"
                     >
                         {t('Navbar.MyResume')}
                     </a>
@@ -75,7 +75,7 @@ export function Navbar() {
                     <a
                         href={myResumeFile} // Replace with the path to your resume file
                         download
-                        className="inline-block m-2 px-6 py-2 border border-2 border-green-700 text-white rounded-md hover:bg-green-800 transition"
+                        className="inline-block m-2 px-6 py-2 border border-2 border-teal-500 text-white rounded-md hover:bg-teal-600 transition"
                     >
                         {t('Navbar.MyResume')}
                     </a>

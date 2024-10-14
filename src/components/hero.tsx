@@ -31,7 +31,7 @@ export function Hero() {
             <div className="bg-black bg-opacity-60 p-10 flex flex-col justify-center items-center h-screen rounded-md">
                 <div className='text-start mb-4'>
                     <p>{t('Hero.Hello')}</p>
-                    <h1 className="text-5xl md:text-7xl font-bold">{t('Hero.Name')}</h1>
+                    <h1 className="text-5xl md:text-7xl font-bold text-teal-500">{t('Hero.FirstName')} <span className='text-white'>{t('Hero.LastName')}</span></h1>
                     <p className="my-2 text-xl md:text-2xl">{t('Hero.Title')}</p>
                 </div>
                 {/* Call to Action Buttons */}
@@ -48,7 +48,7 @@ export function Hero() {
                     <a
                         href={myResumeFile} // Replace with the path to your resume file
                         download
-                        className="w-full text-center px-6 py-2 border-2 border-green-700 bg-green-700 text-white rounded-md hover:bg-green-800 transition"
+                        className="w-full text-center px-6 py-2 border-2 border-teal-500 bg-teal-500 text-white rounded-md hover:bg-teal-600 transition"
                     >
                         {t('Navbar.MyResume')}
                     </a>

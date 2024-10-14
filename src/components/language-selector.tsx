@@ -91,7 +91,7 @@ const LanguageSelector: React.FC = () => {
           <button
             onClick={() => changeLanguage('en')}
             className={`flex items-center justify-center w-full p-2 rounded-md transition duration-200 ${
-              i18n.language === 'en' ? 'bg-green-700 text-white' : 'hover:bg-gray-700 text-gray-300'
+              i18n.language === 'en' ? 'bg-teal-600 text-white' : 'hover:bg-gray-700 text-gray-300'
             }`}
           >
             {/* 🇺🇸 English */}
@@ -100,7 +100,7 @@ const LanguageSelector: React.FC = () => {
           <button
             onClick={() => changeLanguage('he')}
             className={`flex items-center justify-center w-full p-2 rounded-md mt-2 transition duration-200 ${
-              i18n.language === 'he' ? 'bg-green-700 text-white' : 'hover:bg-gray-700 text-gray-300'
+              i18n.language === 'he' ? 'bg-teal-600 text-white' : 'hover:bg-gray-700 text-gray-300'
             }`}
           >
             {t('LanguageSelector.HE')}
